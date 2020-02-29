@@ -1,21 +1,45 @@
 {
-  "name": "TS_package_test",
+  "name": "number-magic",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A nice number utils",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atwill007/number-magic.git"
+  },
+  "keywords": [
+    "Number",
+    "Magic",
+    "Utils"
+  ],
+  "author": "Jason",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atwill007/number-magic/issues"
+  },
+  "homepage": "https://github.com/atwill007/number-magic",
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "tslint": "^6.0.0",
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.8.3"
-  }
+    "typescript": "^3.5.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }

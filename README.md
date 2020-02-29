@@ -1,2 +1,6 @@
-# TypeScript npm package test
+# number-magic
 
+## Install
+```
+npm install number-magic
+```
