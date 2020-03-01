@@ -4,6 +4,6 @@
  * @param {Number} delta 数字增量
  * @returns {String}
  */
-export function idxList (len: number, delta: number = 0): number[] {
+export function idxList(len: number, delta: number = 0): number[] {
   return Array.from(Array(len), (v, k) => k + delta)
 }
