@@ -1,6 +1,6 @@
 /**
  * idxList 根据指定的数组长度，生成由数组索引推导出的数组
- * @param {Number or String} source
+ * @param {Number} len
  * @param {Number} delta 数字增量
  * @returns {String}
  */

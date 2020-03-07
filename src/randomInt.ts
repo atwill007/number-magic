@@ -1,7 +1,7 @@
 /**
  * randomInt 结果整数r满足 min ≤ r ≤ max
- * @param {NUmber | String} source
- * @param {Number} length
+ * @param {Number} min
+ * @param {Number} max
  */
 export function randomInt(min: number, max: number = min) {
   min = Math.round(min + 0.4999999) // 这里min如果带小数则向上取整
