@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/atwill007/number-magic.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@atwill007"
+  },
   "keywords": [
     "number",
     "magic",
