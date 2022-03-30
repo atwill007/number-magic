@@ -1,7 +1,7 @@
 # number-magic
 
 ## Docs
-English | [简体中文](./docs/zh-cn/README.zh-CN.md)
+简体中文 | [English](../../README.md)
 
 ## Install
 ```
@@ -38,7 +38,7 @@ isNumber(2 ** 53) // true
 isNumber(2 ** 53, true) // false
 
 // ...
-// See unit tests for more
+// 更多使用方法可查看单元测试
 ```
 
-## You are welcome to join the project by proposing PR
+## 欢迎您以提pr的方式加入该项目
