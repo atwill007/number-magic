@@ -4,7 +4,7 @@ import { isNumber } from '../index'
 test('number utils isNumber test', () => {
   expect(isNumber(0.1 + 0.2)).toEqual(true)
   expect(isNumber(+'')).toEqual(true)
-  expect(isNumber(10**100)).toEqual(true)
+  expect(isNumber(10 ** 100)).toEqual(true)
   expect(isNumber(Math.PI)).toEqual(true)
 
   expect(isNumber(NaN)).toEqual(false)

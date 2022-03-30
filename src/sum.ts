@@ -5,6 +5,6 @@
  */
 export function sum(...args: number[]): number {
   return args.reduce((finalValue, current) => {
-    return finalValue += current;
+    return (finalValue += current)
   }, 0)
 }
