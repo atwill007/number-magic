@@ -6,6 +6,7 @@
 简体中文 | [English](../../README.md)
 
 ## Install
+[number-magic](https://www.npmjs.com/package/number-magic)
 ```
 npm install number-magic
 ```
@@ -20,7 +21,16 @@ yarn add number-magic
 
 ## Use
 ```js
-import { comma, toFixed, percentage, idxList, randomInt, capital, precise, isNumber } from 'number-magic'
+import {
+  comma,
+  toFixed,
+  percentage,
+  idxList,
+  randomInt,
+  capital,
+  precise,
+  isNumber,
+} from 'number-magic'
 
 comma(1234567.123) // 1,234,567.123
 
