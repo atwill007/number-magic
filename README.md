@@ -1,5 +1,7 @@
 # number-magic
 
+A useful number utils library
+
 ## Docs
 English | [简体中文](./docs/zh-cn/README.zh-CN.md)
 
@@ -26,7 +28,8 @@ toFixed(1234567.123) // 1234567.12
 toFixed(123.123, 4) // 123.1230
 toFixed(12345.12345, 4) // 12345.1235
 
-percentage(0.6666, 3) // 66.600%
+percentage(0.6666, 3) // 66.660%
+percentage(0.555555, 3) // 55.556%
 
 idxList(6, 1) // [ 1, 2, 3, 4, 5, 6 ]
 

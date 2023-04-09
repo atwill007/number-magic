@@ -1,11 +1,14 @@
+import { isNumber } from './isNumber'
+import { toFixed } from './toFixed'
+
 /**
  * percentage
  * @param {Number or String} source
- * @param {Number} length
+ * @param {Number} digits
  * @returns {String}
  */
-export function percentage(source: number | string, length: number = 2): string {
+export function percentage(source: number | string, digits: number = 2): string {
   const numb = Number(source)
-  if (isNaN(numb)) return ''
-  return (numb * 100).toFixed(length) + '%'
+  if (!isNumber(numb)) return source as string
+  return toFixed(numb * 100, digits) + '%'
 }
