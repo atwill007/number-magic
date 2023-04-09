@@ -9,6 +9,10 @@ npm install number-magic
 ```
 or
 ```
+pnpm install number-magic
+```
+or
+```
 yarn add number-magic
 ```
 
@@ -19,6 +23,8 @@ import { comma, toFixed, percentage, idxList, randomInt, capital, precise, isNum
 comma(1234567.123) // 1,234,567.123
 
 toFixed(1234567.123) // 1234567.12
+toFixed(123.123, 4) // 123.1230
+toFixed(12345.12345, 4) // 12345.1235
 
 percentage(0.6666, 3) // 66.600%
 
