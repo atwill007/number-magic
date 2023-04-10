@@ -5,7 +5,13 @@
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "lib": ["es6", "dom"]
+    "lib": ["es6", "dom"],
+    "noEmitOnError": true,
+    "removeComments": true,
+    "listEmittedFiles": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "version": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]

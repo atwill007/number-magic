@@ -1,4 +1,4 @@
-import { randomInt } from '../index'
+import { randomInt } from '../src/index'
 
 test('number utils randomInt test', () => {
   expect(randomInt(1.11)).toEqual(-1)

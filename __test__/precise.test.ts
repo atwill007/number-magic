@@ -1,4 +1,4 @@
-import { precise } from '../index'
+import { precise } from '../src/index'
 
 test('number utils precise test', () => {
   const numb = 0.1 + 0.2

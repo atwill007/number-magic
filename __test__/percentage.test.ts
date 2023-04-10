@@ -1,4 +1,5 @@
-import { percentage } from '../index'
+import { percentage } from '../src/index'
+
 test('number utils percentage test', () => {
   expect(percentage(0.123)).toBe('12.30%')
   expect(percentage(0.123, 1)).toBe('12.3%')

@@ -1,5 +1,5 @@
-import { MAX_SAFETY_NUMBER, MIN_SAFETY_NUMBER } from '../utils/constants'
-import { isNumber } from '../index'
+import { MAX_SAFETY_NUMBER, MIN_SAFETY_NUMBER } from '../src/utils/constants'
+import { isNumber } from '../src/index'
 
 test('number utils isNumber test', () => {
   expect(isNumber(0.1 + 0.2)).toEqual(true)

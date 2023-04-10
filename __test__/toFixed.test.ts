@@ -1,4 +1,4 @@
-import { toFixed } from '../index'
+import { toFixed } from '../src/index'
 
 test('number utils toFixed test', () => {
   expect(toFixed(123.123, 2)).toBe('123.12')

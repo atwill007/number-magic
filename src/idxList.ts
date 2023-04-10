@@ -5,5 +5,5 @@
  * @returns {String}
  */
 export function idxList(len: number, delta: number = 0): number[] {
-  return Array.from(Array(len), (v, k) => k + delta)
+  return Array.from(Array(len), (_v, k) => k + delta)
 }
